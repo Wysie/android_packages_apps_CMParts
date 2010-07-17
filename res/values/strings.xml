@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Generic -->
-    <string name="app_name">Impostazioni CyanogenMod</string>
+    <string name="app_name">CyanogenMod settings</string>
 
     <!-- User interface -->
     <string name="ui_title">User interface</string>
@@ -38,6 +38,7 @@
     <string name="clock_title">Clock</string>
     <string name="title_show_clock">Show clock</string>
     <string name="title_clock_color">Clock color</string>
+    <string name="clock_show_am_pm">Show AM/PM for 12-hour clock</string>
 
     <!-- Status Bar, dBm Signal -->
     <string name="dbm_title">dBm signal strength</string>
