@@ -2,12 +2,34 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- General settings -->
-    <PreferenceCategory android:title="@string/general_title">
+    <PreferenceCategory android:key="general_category" android:title="@string/general_title">
+     
+        <!-- LED notifications -->
+        <PreferenceScreen android:key="trackball_notifications"
+            android:title="@string/trackball_title" android:summary="@string/trackball_summary">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.cyanogenmod.cmparts"
+                android:targetClass="com.cyanogenmod.cmparts.activities.TrackballNotificationActivity" />
+        </PreferenceScreen>
         
+        <!-- Power prompt -->
+        <CheckBoxPreference android:key="power_dialog_prompt"
+            android:title="@string/pref_power_prompt_title"
+            android:summary="@string/pref_power_prompt_summary"
+            android:defaultValue="true" />
+
         <!-- Render effect -->
         <ListPreference android:key="pref_render_effect" android:dialogTitle="@string/pref_render_effect_title"
             android:title="@string/pref_render_effect_title" android:summary="@string/pref_render_effect_summary"
-	    android:entries="@array/entries_render_effect" android:entryValues="@array/values_render_effect" />
+            android:entries="@array/entries_render_effect" android:entryValues="@array/values_render_effect" />
+
+        <!-- Backlight -->
+        <PreferenceScreen android:key="backlight_settings"
+            android:title="@string/backlight_title" android:summary="@string/backlight_summary">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.cyanogenmod.cmparts"
+                android:targetClass="com.cyanogenmod.cmparts.activities.BacklightActivity" />
+        </PreferenceScreen>
 
     </PreferenceCategory>
 
@@ -48,7 +70,7 @@
         </PreferenceScreen>
 
     </PreferenceCategory>
-
+    
     <!-- Rotation -->
     <PreferenceCategory android:title="@string/ui_rotation_title">
         <CheckBoxPreference android:key="pref_rotation_90"
@@ -65,5 +87,16 @@
             android:title="@string/pref_pinch_reflow_title"
             android:summary="@string/pref_pinch_reflow_summary" />
     </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/ui_lockscreen_title">
+        <!-- screen timeout delay -->
+        <ListPreference android:key="pref_lockscreen_timeout_delay" android:dialogTitle="@string/pref_lockscreen_delay_title"
+            android:title="@string/pref_lockscreen_timeout_lock_delay" android:summary="@string/pref_lockscreen_timeout_lock_delay_summary"
+        android:entries="@array/pref_lockscreen_delay_entries" android:entryValues="@array/pref_lockscreen_delay_values" />
 
+        <!-- screen off delay -->
+        <ListPreference android:key="pref_lockscreen_screenoff_delay" android:dialogTitle="@string/pref_lockscreen_delay_title"
+            android:title="@string/pref_lockscreen_screenoff_lock_delay" android:summary="@string/pref_lockscreen_screenoff_lock_delay_summary"
+        android:entries="@array/pref_lockscreen_delay_entries" android:entryValues="@array/pref_lockscreen_delay_values" />
+    </PreferenceCategory>
 </PreferenceScreen>

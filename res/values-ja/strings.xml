@@ -14,6 +14,10 @@
     <string name="pref_rotation_180_title">180度</string>
     <string name="pref_rotation_270_title">270度</string>
 
+    <!-- User interface : trackball -->
+    <string name="trackball_title">LED通知</string>
+    <string name="trackball_summary">トラックボール/LEDでの通知の色や点滅を制御する</string>
+
     <!-- User interface : WebView -->
     <string name="ui_webview_title">WebView</string>
     <string name="pref_pinch_reflow_title">ピンチインリフロー</string>
@@ -52,6 +56,7 @@
     <!-- Date and Provider, Date -->
     <string name="date_title">日付</string>
     <string name="title_date_color">日付の色</string>
+    <string name="clock_show_am_pm">12時間時計でAM/PMを表示する</string>
 
     <!-- Date and Provider, PLMN -->
     <string name="plmn_title">PLMNキャリア設定</string>
@@ -88,6 +93,38 @@
     <string name="title_notifications_items_text">アイテムテキストの色</string>
     <string name="title_notifications_items_time">アイテム時刻の色</string>
 
+    <!-- User interface: Trackball notifcations -->
+    <string name="trackball_notifications_title">トラックーボールの通知色</string>
+    <string name="dialog_color_trackball">色を選択</string>
+    <string name="dialog_blink_trackball">点滅間隔を選択</string>
+    <string name="color_trackball_flash_title">点灯色</string>
+    <string name="color_trackball_flash_summary">点灯時の色</string>
+    <string name="color_trackball_custom_title">カスタムカラー</string>
+    <string name="color_trackball_custom_summary">点灯色をカスタマイズする</string>
+    <string name="color_trackball_blink_title">点滅間隔</string>
+    <string name="color_trackball_blink_summary">点滅間隔</string>
+    <string name="color_trackball_test_title">点灯テスト</string>
+    <string name="color_trackball_test_summary">点灯をテストする</string>
+    <string name="trackball_advanced_title">アドバンスド</string>
+    <string name="pref_trackball_sucess_title">通知を継続</string>
+    <string name="pref_trackball_sucess_summary">通知の点滅を継続させる</string>
+    <string name="pref_trackball_random_title">ランダムな色</string>
+    <string name="pref_trackball_random_summary">すべての通知について、ランダムな色でLEDを点滅する</string>
+    <string name="pref_trackball_order_title">順序に従って点滅</string>
+    <string name="pref_trackball_order_summary">LED色の順序に従って点滅</string>
+    <string name="pref_trackball_blend_title">ブレンド通知</string>
+    <string name="pref_trackball_blend_summary">色を混ぜて通知する。通知の継続をオーバーライドします。</string>
+    <string name="pref_trackball_reset_title">リセット</string>
+    <string name="pref_trackball_reset_summary">すべてのアプリについて色設定をリセット</string>
+    <string name="dialog_trackball_loading">ロード中...</string>
+    <string name="dialog_trackball_packagelist">パッケージリストをロード中</string>
+
+
+    <!-- Trackball Settings : Warning dialog -->
+    <string name="notification_battery_warning_title">注意: バッテリーが消費します</string>
+    <string name="notification_battery_warning">このオプションを有効にすることにより、1時間に約3%ほどのバッテリー消費が増加します。バッテリー消費が速くなったと感じたら、恐らくこのオプションが原因です。バッテリー消費が気になるのであれば、このオプションは有効にするべきではありません。</string>
+
+
     <!-- Tweaks Extras -->
     <string name="te_title">追加機能</string>
     <string name="te_title_summary">インタフェース調整の追加機能</string>
@@ -98,13 +135,13 @@
     <string name="message_dialog_reset">すべてのユーザインタフェース設定をデフォルトにしますか? 変更を適用するには再起動します。</string>
     <string name="reset_ui_success">UI設定をリセットしました! 変更を適用するには再起動します。</string>
     <string name="title_export_to_xml">色設定をXMLに出力</string>
-    <string name="summary_export_to_xml">/sdcard/spare_parts_ui.xml に色設定を出力する</string>
+    <string name="summary_export_to_xml">/sdcard/cmparts_ui.xml に色設定を出力する</string>
     <string name="message_dialog_export">XMLにUIの色設定を出力しますか? これはすでに存在するファイルを上書きします。</string>
     <string name="xml_sdcard_unmounted">SDカードがマウントされてません!</string>
     <string name="xml_write_error">XML書き込み中にエラー!</string>
     <string name="xml_export_success">XML出力に成功!</string>
     <string name="title_import_from_xml">XMLから色設定を読み込む</string>
-    <string name="summary_import_from_xml">/sdcard/spare_parts_ui.xml から色設定を読み込む。</string>
+    <string name="summary_import_from_xml">/sdcard/cmparts_ui.xml から色設定を読み込む。</string>
     <string name="message_dialog_import">XMLからUIの色設定を読み込みますか? 変更を適用するには再起動します。</string>
     <string name="xml_file_not_found">XMLファルが見つかりません!</string>
     <string name="xml_io_exception">ファイルを読み込み中にエラー!</string>
@@ -116,6 +153,12 @@
     <string name="input_settings_title">入力設定</string>
     <string name="input_settings_summary">コントロールボタンの挙動など</string>
     <string name="button_settings_title">ボタン設定</string>
+    <string name="lockscreen_settings_title">ロック画面設定</string>
+    <string name="pref_lockscreen_music_controls_title">音楽コントロール</string>
+    <string name="pref_lockscreen_music_controls_summary">ロック画面に音楽コントロールを表示する</string>
+    <string name="pref_lockscreen_always_music_controls_title">常に音楽コントロールを表示</string>
+    <string name="pref_lockscreen_always_music_controls_summary">音楽を再生しているかどうかに関わらず、ロック画面に音楽コントロールを表示する</string>
+
     <string name="pref_trackball_wake_title">トラックボールで復帰</string>
     <string name="pref_trackball_wake_summary">トラックボールを押して端末をスリープから復帰する</string>
     <string name="pref_trackball_unlock_title">トラックボールでアンロック</string>
@@ -223,6 +266,10 @@
 
     <string name="general_title">一般</string>
 
+    <!-- UI Settings : Power off prompt -->
+    <string name="pref_power_prompt_title">電源OFFの確認</string>
+    <string name="pref_power_prompt_summary">シャットダウンやリブート時に確認するかどうかを切り替える</string>
+
     <!-- UI Settings : Render effect -->
     <string name="pref_render_effect_title">描画エフェクト</string>
     <string name="pref_render_effect_summary">スクリーンを描画する色を変更する(バッテリ維持の可能性がある)</string>
@@ -231,6 +278,7 @@
     <string name="renderfx_temp">RenderFX</string>
     <string name="prefs_render_effect">描画エフェクト</string>
     <string name="notify_render_effect">描画エフェクトオン</string>
+    <string name="add_widget">ウィジェットを使用</string>
 
     <!--  Widget Types -->
     <string name="night">ナイト</string>
@@ -245,9 +293,67 @@
     <string name="title_custom_not_bar">通知バーのカスタマイズ</string>
     <string name="summary_custom_not_bar_on">色やスタイルをカスタマイズした通知バーを使用する</string>
     <string name="summary_custom_not_bar_off">CyanogenMod従来の通知バーを使用する</string>
-    <string name="title_square_not_bar">角張った通知バー</string>
-    <string name="summary_square_not_bar_on">角張ったスタイルの通知バーを使用する</string>
-    <string name="summary_square_not_bar_off">従来の角を丸めたスタイルの通知バーを使用する</string>
     <string name="title_not_bar_color_mask">バーの色</string>
-    <string name="summary_not_bar_color_mask">メモ: 透明度(alpha値)の設定は適用されません。</string>
+    <string name="summary_not_bar_color_mask">メモ: 透明度(alpha値)は予測できない結果になります!不透明色をお勧めします</string>
+    <string name="title_custom_exp_not_bar">カスタムプルダウンバー</string>
+    <string name="summary_custom_exp_not_bar_on">色やスタイルをカスタマイズしたプルダウンバーを使用する</string>
+    <string name="summary_custom_exp_not_bar_off">従来のCyanogenModプルダウンバーを使用する</string>
+
+    <string name="title_not_exp_bar_color_mask">プルダウンバーの色</string>
+    <string name="summary_not_exp_bar_color_mask">プルダウン通知バーに適用する色を選択する</string>
+
+    <!-- Performance : Lock home memory -->
+    <string name="pref_lock_home_title">ホームをメモリに維持</string>
+    <string name="pref_lock_home_summary">現在のホームアプリを常にメモリに維持する</string>
+
+    <string name="ui_lockscreen_title">スクリーンロックの設定</string>
+    <string name="pref_lockscreen_delay_title">ディレイ</string>
+    <string name="pref_lockscreen_timeout_lock_delay">スクリーンタイムアウトからのディレイ</string>
+    <string name="pref_lockscreen_screenoff_lock_delay">スクリーンオフしてからのディレイ</string>
+    <string name="pref_lockscreen_timeout_lock_delay_summary">スクリーンがタイムアウトしてからどのくらいの時間でロックするか</string>
+    <string name="pref_lockscreen_screenoff_lock_delay_summary">スクリーンをオフにしてからどのらいの時間でロックするか</string>
+
+    <string name="dialog_clear_flash">点滅をクリア</string>
+    <string name="xml_run_helper">設定ヘルパーを起動</string>
+
+    <!-- Backlight -->
+    <string name="backlight_title">自動バックライト</string>
+    <string name="backlight_summary">レベルの調整とフィルタ</string>
+    <string name="light_filter_title">ライトセンサーフィルタ</string>
+    <string name="light_filter_enabled_title">有効にする</string>
+    <string name="light_filter_enabled_summary">移動平均フィルタを適用し、フリッカを減少させる。</string>
+    <string name="light_filter_window_title">分析窓長</string>
+    <string name="light_filter_window_summary">フィルタ値はこの期間でのセンサー平均値になります。</string>
+    <string name="light_filter_reset_title">リセットする閾値</string>
+    <string name="light_filter_reset_summary">サンプルが現在の平均からこの値だけ逸脱した場合フィルタをリセットします</string>
+    <string name="light_filter_interval_title">サンプリング間隔</string>
+    <string name="light_filter_interval_summary">低い値は精度が良くなりますが、よりCPUを使用します。</string>
+    <string name="light_levels_title">ライトレベル</string>
+    <string name="light_levels_enabled_title">カスタム</string>
+    <string name="light_levels_dim_title">スクリーンの暗さレベル</string>
+    <string name="light_levels_dim_summary">スクリーンを暗くした時の明るさ</string>
+    <string name="light_levels_editor_title">他のレベルを編集...</string>
+    <string name="light_decrease_enabled_title">ライトの減少を許可</string>
+    <string name="light_decrease_enabled_summary">ライトが減少するのを許可します。ヒステリシスを使用してフリッカを減少させてください。</string>
+    <string name="light_decrease_hysteresis_title">ヒステリシスを減少させる</string>
+    <string name="light_decrease_hysteresis_summary">センサーレベルはこれより下にオーバーラップします。</string>
+
+    <!-- Light sensor levels -->
+    <string name="ll_title">ライトセンサーレベル</string>
+    <string name="ll_header_upper">上方</string>
+    <string name="ll_header_lower">下方</string>
+    <string name="ll_header_lcd">スクリーン</string>
+    <string name="ll_header_btn">ボタン</string>
+    <string name="ll_header_kb">キーボード</string>
+    <string name="ll_lux">センサー(フィルタ/生):</string>
+    <string name="ll_lcd">スクリーン:</string>
+    <string name="ll_btn">ボタン:</string>
+    <string name="ll_kb">キーボード:</string>
+    <string name="ll_disabled">無効にする</string>
+    <string name="ll_default">デフォルトに戻す</string>
+    <string name="ll_save">適用して保存</string>
+    <string name="ll_reload">現在の設定を再読込み</string>
+    <string name="ll_bad_levels">レベルは増加しなくてはなりません</string>
+    <string name="ll_num_levels">レベル数をセット</string>
+
 </resources>

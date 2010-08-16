@@ -32,6 +32,9 @@
         <item>Ambra</item>
         <item>Salmone</item>
         <item>Fucsia</item>
+        <item>Calibrato (N1)</item>
+	    <item>Calibrato (N1) Low Red</item>
+	    <item>Calibrato (N1) Cool</item>
     </string-array>
 
     <string-array name="render_entries">
@@ -41,8 +44,63 @@
         <item>Ambra</item>
         <item>Salmone</item>
         <item>Fucsia</item>
+        <item>Calibrato (N1)</item>
+	    <item>Calibrato (N1) Low Red</item>
+	    <item>Calibrato (N1) Cool</item>
 	</string-array>
 
+    <string-array name="entries_trackball_colors">
+        <item>Verde</item>
+        <item>Bianco</item>
+        <item>Rosso</item>
+        <item>Blu</item>
+        <item>Giallo</item>
+        <item>Ciano</item>
+        <item>Magenta</item>
+        <item>Rosa</item>
+        <item>Arancione</item>
+        <item>Blu Chiaro</item>
+	    <item>Random</item>
+            <item>Nessuno</item>
+    </string-array>
+
+    <string-array name="pref_trackball_blink_rate_entries">
+        <item>2 (Veloce)</item>
+        <item>3</item>
+        <item>4 (Media)</item>
+        <item>5</item>
+        <item>6 (Lenta)</item>
+    </string-array>
+ 
+    <string-array name="pref_lockscreen_delay_entries">
+        <item>Immediatamente</item>
+        <item>1s</item>
+        <item>5s</item>
+        <item>10s</item>
+        <item>15s</item>  
+        <item>30s</item>
+        <item>1m</item>
+        <item>5m</item>
+        <item>10m</item>
+        <item>30m</item>
+    </string-array>
+
+    <string-array name="entries_light_filter_window">
+        <item>10 secondi</item>
+        <item>20 secondi</item>
+        <item>30 secondi</item>
+        <item>40 secondi</item>
+        <item>50 secondi</item>
+        <item>60 secondi</item>
+    </string-array>
+  
+    <string-array name="entries_light_filter_interval">
+        <item>0.5 secondi</item>
+        <item>1 secondi</item>
+        <item>2 secondi</item>
+        <item>5 secondi</item>
+        <item>10 secondi</item>
+    </string-array>
     
 
 </resources>
